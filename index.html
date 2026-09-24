@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<head><title>Project</title><style>
+.target{
+  font-size: 20px;
+  text-weight: bold;
+}
+.tag-name{
+  color: red;
+  text-decoration: underline;
+  background-color: rgb(21, 230, 239);
+  transition: background-color 2s, color2s;
+}
+.description{
+  font-family: georgia;
+  font-style: oblique;
+}
+.tag-name:hover{
+  opacity: 0.5;
+  background-color:rgb(230, 23, 230);
+  color: rgb(21, 230, 239);
+}
+.sch-name{
+  color: rgb(21, 230, 239);
+ text-align: center;
+font-size: 28px;
+font-weight: bold;
+  margin-top:5px;
+  font-family: georgia;
+  background-color: rgb(33, 13, 170);
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.view-button{
+  color:rgb(230, 23, 230);
+ background-color: rgb(21, 230, 239); 
+ height:50px;
+ width: 150px;
+ border-radius:50px;
+margin-left: 290px; 
+font-size: 20px;
+font-family: serif;
+font-weight: bold; 
+cursor-pointer;
+box-shadow: 5px 10px 10px blue;
+}
+.view-button:hover{
+  background-color:rgb(230, 23, 230);
+  color:rgb(21, 230, 239); 
+  box-shadow: 5px 10px 10px red;
+  transition: background-color 2s, color 2s;
+  opacity: 0.7;
+}
+.view-button:active{
+  opacity: 0.7;
+
+}
+  .items{
+    color: blue;
+    line-height:10px;
+  }
+.put{
+  font-weight:bold;
+  font-size:20px;
+  font-style: italic;
+  color:rgb(230, 23, 230);
+  
+}
+input{
+  width:200px;
+  color: black;
+  font-size: 20px;
+  font-weight:bold;
+  border-color:green;
+  border-radius: 100px;
+  font-family: 'Brush Script MT', cursive;
+ background-color: white; 
+ transition: background-color 2s, color 2s;
+}
+input:hover{
+  background-color:rgb(230, 230, 230);
+  color:black;
+  opacity:0.9;
+}
+.select-tab{
+  background-color: white;
+  width:200px;
+  color: red;
+  border-color:green;
+  border-radius: 100px;
+  margin-right: 50px;
+  margin-top:10px;
+  color: red;
+  transition: background-color 2s, color 2s;
+}
+.select-tab:hover{
+  background-color:rgb(230, 230, 230);
+  color:red;
+  opacity:0.9;
+}
+.director{
+  font-size: 30px;
+  font-family:serif;
+  color: blue;
+font-style: italic;
+}
+.author{
+  font-family: 'Brush Script MT', cursive;
+  color: blue;
+}
+.gender-tag{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color:blue;
+  width: 30px;
+  }
+  .lable-tag{
+  margin-bottom:20px;
+}
+.submit-button{
+  color:rgb(230, 23, 230);
+ background-color: rgb(21, 230, 239); 
+ height:50px;
+ width: 100px;
+ border-radius:50px;
+ margin-left:335px;
+font-size: 20px;
+font-family: serif;
+font-weight: bold; 
+cursor-pointer;
+box-shadow: 5px 10px 10px blue;
+}
+.submit-button:hover{
+    background-color:rgb(230, 30, 230);
+  color: rgb(21, 230, 239); 
+  box-shadow: 5px 10px 10px red;
+  transition: background-color 2s, color 2s;
+  opacity: 0.7;
+  opacity:0.9;
+}
+.facebook-b{
+font-weight: bold;
+  width:40px;
+  height:40px;
+  font-size: 42px;
+  font-style: italic;
+  color: white;
+  background-color: rgb(0, 70, 170);
+  border: none;
+  border-radius: 7px;
+  transition: background-color 2s
+}
+  .facebook-b:hover{
+background-color: rgb(0, 210, 210);
+}
+</style></head>
+<body>
+<p class="sch-name">
+MANGU HIGH SCHOOL 
+</P>
+<p class="description">
+Welcome to <span class="tag-name"> MANGU HIGH SCHOOL</span>
+teaching
+record portal&#183
+The portal allows us to record our teaching stuffs' activities, day
+and time they preliminarily began their session and the termination time of 
+the teaching session.
+</p>
+<p class="put">NAME</p>
+<input type="text" name="name">
+<p class="gender-tag">
+Gender:
+
+  <label class="lable-tag">
+  <input type="radio" name="gender" value="male" /> Male</label>
+  <label >
+  <input type="radio" name="gender" value="female" /> Female</label>
+      </p>
+
+<p class="put">Input date.</p>
+  <input type="date" id="date" name="date">
+  <p class="put">Input time in.</p>
+  <input type="time"id=" time" name="time">
+  <p class="put">Input time out</p>
+  <input type="time"id=" time" name="time">
+  <body style="background-color: white;"></body>
+<p class="put">
+Input the taught subject
+</p> 
+<select class="select-tab">
+<option value="select">Select</option>
+  <option value="math">Mathmatics</option>
+<option value="english">English</option>
+  <option value="french">French</option>
+<option value="kiswahili">Kiswahili</option>
+<option value="biology">Biology</option>
+<option value="chemistry">Chemistry</option>
+<option value="physics">Physics</option>
+<option value="cre">CRE</option>
+<option value="history">History</option>
+<option value="geography">Geography</option>
+<option value="business studies">Business studies</option>
+<option value="agriculture">Agriculture</option>
+<option value="aviation">Aviation</option>
+  <option value="Homescience">Home science</option>
+  </select> 
+ <p> <select class="select-tab">
+ <option value="form">FORM...</option>
+ <option value="form1">GRADE 10 EAST</option>
+ <option value="form 1">GRADE 10 WEST</option>
+ <option value="form3">FORM 3 EAST</option>
+ <option value="form3">FORM 3 WEST</option>
+ <option value="form4">FORM 4 EAST</option>
+ <option value="form4">FORM 4 WEST</option>4
+</select></p> 
+  <button class="submit-button" id="submit-button"
+  onclick="myFunction()">SUBMIT</button>
+  <marquee p="scroll" 
+width="300px" left="30px" direction="left">
+<P class="director" >TO KNOW MORE ABOUT US PRESS THE <span 
+class="view-button"> WEB-PAGE
+</span> button. </P>
+</marquee>
+<div align="center">
+<a href="https://www.manguhigh.com">
+<button class="view-button">
+WEB-PAGE
+</button></a>
+</div>
+<p>contact us via:</p>
+<p>Email. Manguhigh@gmail
+.co.ke.
+
+</p>
+<p>
+Tel: 02000000000
+</p>
+<p>phone number: +254712345678</p>
+
+ <p>Follow us on facebook :
+     <a href="https://www.facebook.com/groups/2332716817/?ref=share&mibextid=NSMWBT">
+     
+     <button class="facebook-b">f</button>
+      
+     </a></p>
+    
+<p>web-designer:<span class="author">KAMANDE BRIAN KANG'ETHE
+</span><p>web-designer number:<span class="author">0796873272
+</span>
+</p>  
+
+  
