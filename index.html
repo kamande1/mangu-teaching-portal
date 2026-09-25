@@ -10,66 +10,93 @@
 <body>
 <header class="sch-name">MANGU HIGH SCHOOL</header>
 
-<div class="container">
-<p class="description">Welcome to <span class="tag-name">MANGU HIGH SCHOOL</span> teaching record portal. The portal records teaching activities, start time and end time.</p>
-
-<form id="teachForm">
+<p class="description">
+Welcome to <span class="tag-name"> MANGU HIGH SCHOOL</span>
+teaching
+record portal&#183
+The portal allows us to record our teaching stuffs' activities, day
+and time they preliminarily began their session and the termination time of 
+the teaching session.
+</p>
 <p class="put">NAME</p>
-<input type="text" name="name" required placeholder="Enter full name">
+<input type="text" name="name">
+<p class="gender-tag">
+Gender:
 
-<p class="put">Gender</p>
-<div class="gender-group">
-<label><input type="radio" name="gender" value="male"> Male</label>
-<label><input type="radio" name="gender" value="female"> Female</label>
+  <label class="lable-tag">
+  <input type="radio" name="gender" value="male" /> Male</label>
+  <label >
+  <input type="radio" name="gender" value="female" /> Female</label>
+      </p>
+
+<p class="put">Input date.</p>
+  <input type="date" id="date" name="date">
+  <p class="put">Input time in.</p>
+  <input type="time"id=" time" name="time">
+  <p class="put">Input time out</p>
+  <input type="time"id=" time" name="time">
+  <body style="background-color: white;"></body>
+<p class="put">
+Input the taught subject
+</p> 
+<select class="select-tab">
+<option value="select">Select</option>
+  <option value="math">Mathmatics</option>
+<option value="english">English</option>
+  <option value="french">French</option>
+<option value="kiswahili">Kiswahili</option>
+<option value="biology">Biology</option>
+<option value="chemistry">Chemistry</option>
+<option value="physics">Physics</option>
+<option value="cre">CRE</option>
+<option value="history">History</option>
+<option value="geography">Geography</option>
+<option value="business studies">Business studies</option>
+<option value="agriculture">Agriculture</option>
+<option value="aviation">Aviation</option>
+  <option value="Homescience">Home science</option>
+  </select> 
+ <p> <select class="select-tab">
+ <option value="form">FORM...</option>
+ <option value="form1">GRADE 10 EAST</option>
+ <option value="form 1">GRADE 10 WEST</option>
+ <option value="form3">FORM 3 EAST</option>
+ <option value="form3">FORM 3 WEST</option>
+ <option value="form4">FORM 4 EAST</option>
+ <option value="form4">FORM 4 WEST</option>4
+</select></p> 
+  <button class="submit-button" id="submit-button"
+  onclick="myFunction()">SUBMIT</button>
+  <marquee p="scroll" 
+width="300px" left="30px" direction="left">
+<P class="director" >TO KNOW MORE ABOUT US PRESS THE <span 
+class="view-button"> WEB-PAGE
+</span> button. </P>
+</marquee>
+<div align="center">
+<a href="https://www.manguhigh.com">
+<button class="view-button">
+WEB-PAGE
+</button></a>
 </div>
+<p>contact us via:</p>
+<p>Email. Manguhigh@gmail
+.co.ke.
 
-<p class="put">Input date</p>
-<input type="date" name="date" required>
+</p>
+<p>
+Tel: 02000000000
+</p>
+<p>phone number: +254712345678</p>
 
-<p class="put">Time In</p>
-<input type="time" name="time_in" required>
-
-<p class="put">Time Out</p>
-<input type="time" name="time_out" required>
-
-<p class="put">Taught Subject</p>
-<select class="select-tab" required>
-<option value="">Select</option>
-<option>Mathematics</option><option>English</option><option>Kiswahili</option>
-<option>Biology</option><option>Chemistry</option><option>Physics</option>
-<option>CRE</option><option>History</option><option>Geography</option>
-<option>Business Studies</option><option>Agriculture</option>
-</select>
-
-<p class="put">Form</p>
-<select class="select-tab" required>
-<option value="">FORM...</option>
-<option>FORM 1 EAST</option><option>FORM 1 WEST</option>
-<option>FORM 2 EAST</option><option>FORM 2 WEST</option>
-<option>FORM 3 EAST</option><option>FORM 3 WEST</option>
-<option>FORM 4 EAST</option><option>FORM 4 WEST</option>
-</select>
-
-<button type="submit" class="submit-button">SUBMIT</button>
-</form>
-
-<div class="center">
-<a href="https://www.manguhigh.com" target="_blank"><button class="view-button">WEB-PAGE</button></a>
-</div>
-
-<footer>
-<p>Contact: Manguhigh@gmail.co.ke | Tel: 0200000000</p>
-<p>Facebook: Mangu High School</p>
-<p>Web-designer: <span class="author">KAMANDE BRIAN KANG'ETHE</span></p>
-</footer>
-</div>
-
-<script>
-document.getElementById('teachForm').addEventListener('submit', function(e){
-e.preventDefault();
-alert("Details submitted successfully!");
-this.reset();
-});
-</script>
-</body>
-</html>
+ <p>Follow us on facebook :
+     <a href="https://www.facebook.com/groups/2332716817/?ref=share&mibextid=NSMWBT">
+     
+     <button class="facebook-b">f</button>
+      
+     </a></p>
+    
+<p>web-designer:<span class="author">KAMANDE BRIAN KANG'ETHE
+</span><p>web-designer number:<span class="author">0796873272
+</span>
+</p>  
